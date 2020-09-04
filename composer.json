@@ -1,0 +1,44 @@
+{
+    "name": "better/nanoid",
+    "type": "library",
+    "description": "A copy of nanoid in PHP",
+    "keywords": ["better", "nanoid", "php"],
+    "homepage": "https://github.com/Microtribute/better-nanoid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Microtribute",
+            "email": "microtibute@github.io",
+            "homepage": "https://github.com/Microtribute",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Better\\Nanoid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Better\\Nanoid\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
