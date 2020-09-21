@@ -1,7 +1,9 @@
 # Nanoid-php
 
 
-*Only works with PHP 7.1+*
+## Overview
+
+Replacement of [hidehalo/nanoid-php](https://github.com/hidehalo/nanoid-php) to work with PHP 7.1+
 
 > A tiny (179 bytes), secure URL-friendly unique string ID generator for JavaScript
 >
@@ -10,8 +12,6 @@
 > **Small.** Only 179 bytes (minified and gzipped). No dependencies. It uses Size Limit to control size.
 >
 > **Compact.** It uses more symbols than UUID (A-Za-z0-9_\-) and has the same number of unique options in just 21 symbols instead of 36.
-
-This is a PHP port of the NPM package [nanoid](https://github.com/ai/nanoid) originally created by [ai](https://github.com/ai). 
 
 ## Install
 
